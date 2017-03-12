@@ -7,6 +7,36 @@ A JavaScript wrapper for [Khajana](http://khajana.org/) REST [API](https://githu
 The module is built as UMD.
 So you can use it directly in a script tag, or you can `require` it.
 
+## node
+
+```javascript
+const Khajana = require('khajana');
+const fetch = require('node-fetch');
+const chalk = require('chalk');
+
+fetch(url)
+  .then(r => r.json())
+  .then(r => {
+    if (r.error) {
+      console.log(chalk.red(`Sorry! Couldn't fetch the shabad :(`));
+    } else {
+      const { gurbani: lines } = r;
+
+      $shabad.innerHTML = lines
+        .map(({ shabad }) => `
+          ${chalk.blue(shabad.gurbani.unicode)}
+            ${chalk.grey(shabad.translation.english.ssk)}
+        `.trim());
+    }
+  })
+  .catch(err => {
+    console.log(chalk.red(`Sorry! Couldn't fetch the shabad :(`));
+    console.log(err);
+  });
+```
+
+## web
+
 ```html
 <!doctype html>
 <html>
@@ -16,6 +46,7 @@ So you can use it directly in a script tag, or you can `require` it.
 
     <div class="shabad"></div>
 
+    <!-- You might want to host it somewhere reliable. -->
     <script src="https://raw.githubusercontent.com/bogas04/khajana-js/master/index.js"></script>
 
     <script>
@@ -35,7 +66,8 @@ So you can use it directly in a script tag, or you can `require` it.
               .map(({ shabad }) => `
                 <p>${shabad.gurbani.unicode}</p>
                 <blockquote>${shabad.translation.english.ssk}</blockquote>
-              `);
+              `)
+              .join('');
           }
         })
         .catch(err => {
