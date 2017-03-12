@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Gurbani</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 0;
+        font-size: 10px;
+      }
+
+      @keyframes text-loading {
+        0% { content: "Loading."; }
+        25% { content: "Loading.."; }
+        50% { content: "Loading..."; }
+        75% { content: "Loading.."; }
+        100% { content: "Loading."; }
+      }
+
+      .background {
+        filter: blur(10px);
+        width: calc(100vw + 2em);
+        height: calc(100vh + 2em);
+        margin: -0.5em;
+        position: fixed;
+        padding: 0;
+        object-fit: cover;
+        z-index: 0;
+      }
+
+      .shabad-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .shabad-viewer {
+        position: relative;
+        z-index: 1;
+        width: 75vw;
+        font-size: 2em;
+      }
+
+      .shabad-viewer[data-loading=false] {
+        background-color: rgba(255, 255, 255, 0.5);
+        text-shadow: 0 0 1px white;
+        padding: 1em;
+      }
+
+      .shabad-viewer .bani .shabad-line p {
+        font-size: 1.5em;
+      }
+
+      .shabad-viewer .meta {
+        text-align: right;
+      }
+
+      .shabad-viewer .meta .author:not(:empty)::after { content: " - "; }
+
+      .shabad-viewer .meta .granth:not(:empty)::after { content: ":"; }
+
+      .shabad-viewer:not([data-error=""])::before {
+        content: attr(data-error);
+        color: red;
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 45vh;
+      }
+
+      .shabad-viewer[data-loading="true"]::after {
+        animation: text-loading 0.5s;
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 45vh;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="background.png" class="background"/>
+    <div class="shabad-wrapper">
+      <div class="shabad-viewer" data-loading="true" data-error="">
+        <div class="meta">
+        </div>
+        <div class="bani"></div>
+        <div class="meta">
+          <span class="author"></span>
+          <span class="granth"></span>
+          <span class="ang"></span>
+        </div>
+      </div>
+    </div>
+    <script src="https://raw.githubusercontent.com/bogas04/khajana-js/master/index.js"></script>
+    <script src="./index.js" defer></script>
+  </body>
+</html>
