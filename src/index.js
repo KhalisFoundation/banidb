@@ -1,8 +1,8 @@
 export const API_URL = `https://devapi.khajana.org/`;
 
 export const TYPES = [
-  'First Letter of each word from begining (Gurmukhi)',
-  'First Letter of each word from anywhere (Gurmukhi)',
+  'First letter of each word from beginning (Gurmukhi)',
+  'First letter of each word from anywhere (Gurmukhi)',
   'Full Word (Gurmukhi)',
   'Full Word (English)',
   'Romanized (English)',
