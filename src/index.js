@@ -1,9 +1,9 @@
 export const API_URL = `https://api.khajana.org/`;
 
 export const TYPES = [
-  'First Letter Start (Gurmukhi)',
-  'First Letter Anywhere (Gurmukhi)',
-  'Full Word (Gurakhar)',
+  'First letter of each word from beginning (Gurmukhi)',
+  'First letter of each word from anywhere (Gurmukhi)',
+  'Full Word (Gurmukhi)',
   'Full Word (English)',
   'Romanized (English)',
 ];
