@@ -1,4 +1,4 @@
-export const API_URL = `https://devapi.khajana.org/`;
+export const API_URL = `https://api.khajana.org/`;
 
 export const TYPES = [
   'First Letter Start (Gurmukhi)',
