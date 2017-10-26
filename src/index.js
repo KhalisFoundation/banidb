@@ -1,4 +1,4 @@
-export const API_URL = `https://api.khajana.org/`;
+export const API_URL = `https://api.shabados.org/`;
 
 export const TYPES = [
   'First letter of each word from beginning (Gurmukhi)',

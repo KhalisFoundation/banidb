@@ -1,6 +1,6 @@
 {
   "name": "khajana",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript API wrapper for Khajana REST API",
   "main": "index.js",
   "scripts": {
