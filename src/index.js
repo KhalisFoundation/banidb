@@ -1,11 +1,11 @@
 export const API_URL = `https://api.shabados.org/`;
 
 export const TYPES = [
-  'First letter of each word from beginning (Gurmukhi)',
-  'First letter of each word from anywhere (Gurmukhi)',
+  'First letter each word from start (Gurmukhi)',
+  'First letter each word anywhere (Gurmukhi)',
   'Full Word (Gurmukhi)',
-  'Full Word (English)',
-  'Romanized (English)',
+  'Full Word Translation (English)',
+  'Romanized Gurmukhi (English)',
 ];
 
 export const SOURCES = {
@@ -13,9 +13,10 @@ export const SOURCES = {
   G: 'Guru Granth Sahib Ji',
   D: 'Dasam Granth Sahib',
   B: 'Bhai Gurdas Ji Vaaran',
-  N: 'Bhai Nand Lal Ji Vaaran',
   A: 'Amrit Keertan',
   S: 'Bhai Gurdas Singh Ji Vaaran',
+  N: 'Bhai Nand Lal Ji Vaaran',
+  T: 'Bhai Nand Lal Ji Tankhanama'
 };
 
 export const buildApiUrl = options => {
