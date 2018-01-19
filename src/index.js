@@ -16,7 +16,7 @@ export const SOURCES = {
   A: 'Amrit Keertan',
   S: 'Bhai Gurdas Singh Ji Vaaran',
   N: 'Bhai Nand Lal Ji Vaaran',
-  T: 'Bhai Nand Lal Ji Tankhanama'
+  R: 'Rehatnamas and Tankhanamas'
 };
 
 export const buildApiUrl = options => {
