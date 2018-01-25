@@ -34,7 +34,8 @@ export const buildApiUrl = options => {
     hukam = false,          // Boolean: Pass true if you want hukamnama of today.
     akhar = false,          // Boolean: Pass true to convert query string (gurulipi) into unicode text.
     lipi = false,           // Boolean: Pass true to convert query string (unicode) into gurulipi text.
-    random = false          // Boolean: Pass true to get random shabad.
+    random = false,          // Boolean: Pass true to get random shabad.
+    randomid = false          // Boolean: Pass true to get random shabad id only.
   } = options;
 
   let url = API_URL;
@@ -74,6 +75,10 @@ export const buildApiUrl = options => {
   } else if (akhar !== false && lipi !== false) {
 
     url += `akhar/${lipi}`;
+
+  } else if (randomid !== false) {
+
+    url += `random/id`;
 
   } else if (random !== false) {
 
