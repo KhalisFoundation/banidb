@@ -1,6 +1,6 @@
 {
-  "name": "khajana",
-  "version": "1.0.6",
+  "name": "shabados",
+  "version": "2.0.0-beta.1",
   "description": "JavaScript API wrapper for Khajana REST API",
   "main": "index.js",
   "scripts": {
@@ -18,14 +18,14 @@
   },
   "homepage": "https://bogas04.github.io/khajana-js",
   "devDependencies": {
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.4.0",
-    "babel-preset-env": "^1.2.1",
-    "webpack": "^2.2.1"
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "babel-loader": "^8.0.0-beta.0",
+    "webpack": "^3.11.0"
   },
   "babel": {
     "presets": [
-      "env"
+      "@babel/preset-env"
     ]
   }
 }
