@@ -1,5 +1,3 @@
-export const API_URL = `https://api.shabados.org/`;
-
 export const TYPES = [
   'First letter each word from start (Gurmukhi)',
   'First letter each word anywhere (Gurmukhi)',
@@ -34,8 +32,9 @@ export const buildApiUrl = options => {
     hukam = false,          // Boolean: Pass true if you want hukamnama of today.
     akhar = false,          // Boolean: Pass true to convert query string (gurulipi) into unicode text.
     lipi = false,           // Boolean: Pass true to convert query string (unicode) into gurulipi text.
-    random = false,          // Boolean: Pass true to get random shabad.
-    randomid = false          // Boolean: Pass true to get random shabad id only.
+    random = false,         // Boolean: Pass true to get random shabad.
+    randomid = false,       // Boolean: Pass true to get random shabad id only.
+    API_URL = 'https://api.banidb.org/', // String: API_URL to hit. (Prod: api.banidb.com, Dev: devapi.khajana.org).
   } = options;
 
   let url = API_URL;
