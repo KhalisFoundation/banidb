@@ -1,7 +1,7 @@
 {
-  "name": "shabados",
-  "version": "2.0.0-beta.3",
-  "description": "JavaScript API wrapper for Khajana REST API",
+  "name": "banidb",
+  "version": "1.0.0",
+  "description": "JavaScript API wrapper for BaniDB REST API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,12 +11,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bogas04/khajana-js"
+    "url": "git+https://github.com/bogas04/banidb-js"
   },
   "bugs": {
-    "url": "https://github.com/bogas04/khajana-js/issues"
+    "url": "https://github.com/bogas04/banidb-js/issues"
   },
-  "homepage": "https://bogas04.github.io/khajana-js",
+  "homepage": "https://bogas04.github.io/banidb-js",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
     "@babel/preset-env": "^7.0.0-beta.40",
@@ -24,8 +24,6 @@
     "webpack": "^3.11.0"
   },
   "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
+    "presets": ["@babel/preset-env"]
   }
 }
