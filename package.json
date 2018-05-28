@@ -1,6 +1,6 @@
 {
   "name": "banidb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript API wrapper for BaniDB REST API",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,8 @@
     "webpack": "^3.11.0"
   },
   "babel": {
-    "presets": ["@babel/preset-env"]
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }
