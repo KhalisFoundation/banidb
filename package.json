@@ -1,6 +1,6 @@
 {
-  "name": "banidb",
-  "version": "1.0.1",
+  "name": "@sttm/banidb",
+  "version": "1.0.0",
   "description": "JavaScript API wrapper for BaniDB REST API",
   "main": "index.js",
   "scripts": {
