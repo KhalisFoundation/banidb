@@ -1,6 +1,12 @@
-# banidb 💎
+# banidb 🔥
 
 A JavaScript wrapper for [Khajana](http://banidb.com/) REST [API](https://github.com/KhalisFoundation/BaniDB-API)
+
+# Installation
+
+```
+npm install @sttm/banidb
+```
 
 # Usage
 
