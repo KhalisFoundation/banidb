@@ -57,11 +57,11 @@ export const buildApiUrl = options => {
 
     url += `search/${q}?${params.join("&")}`;
   } else if (id !== false) {
-    url += `shabad/${id}`;
+    url += `shabads/${id}`;
   } else if (ang !== false) {
-    url += `ang/${ang}/${source ? source : ""}`;
+    url += `angs/${ang}/${source ? source : ""}`;
   } else if (hukam !== false) {
-    url += `hukamnama/today`;
+    url += `hukamnamas/today`;
   } else if (akhar !== false && lipi !== false) {
     url += `akhar/${lipi}`;
   } else if (randomid !== false) {
