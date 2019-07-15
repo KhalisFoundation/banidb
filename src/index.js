@@ -28,7 +28,7 @@ export const buildApiUrl = options => {
     results = false, // Number: Count of results you want.
     offset = false, // Number: Used for pagination.
     id = false, // Number: Shabad ID.
-    hukam = false, // Boolean: Pass true if you want hukamnama of today.
+    hukam = false, // String: Pass 'today' if you want hukamnama of today or pass a date to get previous hukamnama.
     akhar = false, // Boolean: Pass true to convert query string (gurulipi) into unicode text.
     lipi = false, // Boolean: Pass true to convert query string (unicode) into gurulipi text.
     random = false, // Boolean: Pass true to get random shabad.
@@ -61,7 +61,7 @@ export const buildApiUrl = options => {
   } else if (ang !== false) {
     url += `angs/${ang}/${source ? source : ""}`;
   } else if (hukam !== false) {
-    url += `hukamnamas/today`;
+    url += `hukamnamas/${hukam}`;
   } else if (akhar !== false && lipi !== false) {
     url += `akhar/${lipi}`;
   } else if (randomid !== false) {
