@@ -53,7 +53,7 @@ export const buildApiUrl = options => {
 
     if (results) params.push(`results=${results}`);
 
-    if (offset) params.push(`offset=${offset}`);
+    if (offset) params.push(`page=${offset}`);
 
     url += `search/${q}?${params.join("&")}`;
   } else if (id !== false) {
