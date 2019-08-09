@@ -17,6 +17,13 @@ export const SOURCES = {
   R: "Rehatnamas & Panthic Sources"
 };
 
+export const SOURCES_WITH_ANG = {
+  G: SOURCES.G,
+  D: SOURCES.D,
+  B: SOURCES.B,
+  S: SOURCES.S
+}
+
 export const buildApiUrl = options => {
   const {
     q = false, // String: Query string.
