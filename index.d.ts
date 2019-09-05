@@ -13,6 +13,15 @@ interface ISources  {
 
 export var SOURCES : ISources;
 
+interface ISources_WITH_ANG {
+    G: ISources["G"],
+    D: ISources["D"],
+    B: ISources["B"],
+    S: ISources["S"],
+}
+
+export var SOURCES_WITH_ANG: ISources_WITH_ANG;
+
 interface IOptions {
     q: string,
     source: keyof ISources,
