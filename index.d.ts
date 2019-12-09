@@ -37,7 +37,8 @@ interface IOptions {
     lipi: boolean,
     random: boolean,
     randomid: boolean,
-    API_URL: string
+    API_URL: string,
+    livesearch: boolean,
 }
 
 export const buildApiUrl : (options: Partial<IOptions>) => string;
