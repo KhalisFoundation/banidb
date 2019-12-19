@@ -3,7 +3,10 @@ export const TYPES = [
   "First letter each word anywhere (Gurmukhi)",
   "Full Word (Gurmukhi)",
   "Full Word Translation (English)",
-  "Romanized Gurmukhi (English)"
+  "Romanized Gurmukhi (English)",
+  "Ang",
+  "Main Letters (Gurmukhi)",
+  "Romanized first letter anywhere (English)"
 ];
 
 export const SOURCES = {
