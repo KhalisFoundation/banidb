@@ -43,7 +43,7 @@ export const buildApiUrl = options => {
     lipi = false, // Boolean: Pass true to convert query string (unicode) into gurulipi text.
     random = false, // Boolean: Pass true to get random shabad.
     randomid = false, // Boolean: Pass true to get random shabad id only.
-    API_URL = "https://api.banidb.com/", // String: API_URL to hit. (Prod: api.banidb.com, Dev: devapi.khajana.org).
+    API_URL = "https://api.banidb.com/v2", // String: API_URL to hit. (Prod: api.banidb.com, Dev: devapi.khajana.org).
     livesearch = false,
   } = options;
 
