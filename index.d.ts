@@ -39,6 +39,7 @@ interface IOptions {
     randomid: boolean,
     API_URL: string,
     livesearch: boolean,
+    simplify: boolean,
 }
 
 export const buildApiUrl : (options: Partial<IOptions>) => string;

@@ -45,6 +45,7 @@ export const buildApiUrl = options => {
     randomid = false, // Boolean: Pass true to get random shabad id only.
     API_URL = "https://api.banidb.com/v2/", // String: API_URL to hit. (Prod: api.banidb.com, Dev: devapi.khajana.org).
     livesearch = false,
+    simplify = false // Boolean: Pass true/1 to get simplified results.
   } = options;
 
   let url = API_URL;
@@ -67,6 +68,8 @@ export const buildApiUrl = options => {
     if (offset) params.push(`page=${offset}`);
 
     if (livesearch) params.push(`livesearch=1`);
+
+    if (simplify) params.push(`simplify=${simplify}`);
 
     url += `search/${q}?${params.join("&")}`;
   } else if (id !== false) {
