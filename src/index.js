@@ -6,7 +6,8 @@ export const TYPES = [
   "Romanized Gurmukhi (English)",
   "Ang",
   "Main Letters (Gurmukhi)",
-  "Romanized first letter anywhere (English)"
+  "Romanized first letter anywhere (English)",
+  "Auto Detect"
 ];
 
 export const SOURCES = {
@@ -45,6 +46,7 @@ export const buildApiUrl = options => {
     randomid = false, // Boolean: Pass true to get random shabad id only.
     API_URL = "https://api.banidb.com/v2/", // String: API_URL to hit. (Prod: api.banidb.com, Dev: devapi.khajana.org).
     livesearch = false,
+    isGurmukhi = false,
   } = options;
 
   let url = API_URL;
@@ -67,6 +69,8 @@ export const buildApiUrl = options => {
     if (offset) params.push(`page=${offset}`);
 
     if (livesearch) params.push(`livesearch=1`);
+
+    if (isGurmukhi) params.push(`isGurmukhi=1`);
 
     url += `search/${q}?${params.join("&")}`;
   } else if (id !== false) {
