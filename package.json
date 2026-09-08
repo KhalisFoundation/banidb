@@ -4,7 +4,7 @@
   "description": "JavaScript API wrapper for BaniDB REST API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test tests/offline.test.js",
     "prepublishOnly": "npm run build",
     "build": "webpack -p"
   },

@@ -2,6 +2,8 @@
 
 A JavaScript wrapper for [Khajana](http://banidb.com/) REST [API](https://github.com/KhalisFoundation/BaniDB-API)
 
+For reading a downloaded BaniDB SQLite snapshot without an internet connection, see the [offline client](offline/README.md). It accepts your platform's SQLite connection and is available as a separate `@sttm/banidb/offline` entry point.
+
 # Installation
 
 ```
